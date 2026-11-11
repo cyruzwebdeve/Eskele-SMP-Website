@@ -6,7 +6,7 @@ import modsBadge from "../assets/mods.png";
 const moderators = [
   { ign: "kiematcha", skin: kiematchaSkin },
   { ign: "iPandaBanana", skin: pandaSkin },
-  { ign: "Tadashimvp", skin: tadashiSkin },
+  { ign: "Tadashivmp", skin: tadashiSkin },
 ];
 
 export default function ModsGrid() {
