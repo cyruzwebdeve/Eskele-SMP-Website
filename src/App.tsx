@@ -6,6 +6,7 @@ import peacefulCrest from "./assets/eskele-peaceful-crest.png";
 import peacefulWordmark from "./assets/eskele-peaceful-wordmark.png";
 import ScreenshotCarousel from "./components/ScreenshotCarousel";
 import StaffCarousel from "./components/StaffCarousel";
+import ModsGrid from "./components/ModsGrid";
 import communityAdmins from "./assets/admins.png";
 import communityOwner from "./assets/owner.png";
 import NetheriteCursor from "./components/NetheriteCursor";
@@ -351,6 +352,21 @@ export default function App() {
           </p>
         </div>
         <StaffCarousel />
+      </section>
+
+      <section id="mods" className="staff-section mods-section" aria-labelledby="mods-title">
+        <div className="section-heading">
+          <div>
+            <span className="section-kicker">
+              <PixelMark /> HERE TO HELP
+            </span>
+            <h2 id="mods-title">MEET THE MODS</h2>
+          </div>
+          <p>
+            Our moderators help players, keep the peace, and make Eskele a welcoming place to play.
+          </p>
+        </div>
+        <ModsGrid />
       </section>
 
       <section id="community" className="community-section">
