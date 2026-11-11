@@ -46,6 +46,28 @@ Vite uses its native config loader so Windows native dependencies are loaded dir
 Node.js 22.18+ supports the TypeScript config without a separate transpiler. Restart
 the dev server after changing site metadata in `.figma/make/site.json`.
 
+## Deploy to Vercel from GitHub
+
+Connect this repository and use the Vite framework preset. `vercel.json` sets the
+build command to `pnpm build` and the output directory to `dist`. Use Node.js 22.18+
+or 24.x. The build checks image files before bundling the app.
+
+All PNGs in `src/assets` (including skins) and `public` are regular Git files.
+Vercel must receive actual images, rather than Git LFS pointer files. If images were
+previously committed through LFS, changing `.gitattributes` alone does not replace
+the pointers already stored in Git. Re-add the hydrated files and publish a new commit:
+
+```powershell
+git add .
+git add --renormalize -- src/assets public
+git commit -m "Fix website images for Vercel deployment"
+git push
+```
+
+The GitHub-connected Vercel project will build the new commit. Check that the
+deployment uses that commit, then reload the site. Redeploying the old commit keeps
+the old LFS pointers and cannot fix its images.
+
 ## Site configuration
 
 - `src/site-config.ts`: Discord invite, shared by every community/access link.

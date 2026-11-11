@@ -1025,8 +1025,14 @@
   position: absolute;
   z-index: 1;
   inset: 0;
-  background:
-    linear-gradient(90deg, #471052e6 0%, #71208ab3 38%, #9b22b34d 58%, #c638e41a 78%, #c638e40d 100%);
+  background: linear-gradient(
+    90deg,
+    #471052e6 0%,
+    #71208ab3 38%,
+    #9b22b34d 58%,
+    #c638e41a 78%,
+    #c638e40d 100%
+  );
   pointer-events: none;
 }
 

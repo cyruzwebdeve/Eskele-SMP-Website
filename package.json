@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --configLoader native",
-    "build": "tsc --noEmit && vite build --configLoader native",
+    "build": "node scripts/check-assets.mjs && tsc --noEmit && vite build --configLoader native",
     "typecheck": "tsc --noEmit",
     "test": "node --test --test-isolation=none tests/carousel-loop.test.ts",
     "preview": "vite preview --configLoader native",
