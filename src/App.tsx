@@ -4,12 +4,14 @@ import fabricHero from "./assets/fabric-adventures-hero.png";
 import fabricWordmark from "./assets/eskele-fabric-wordmark.png";
 import peacefulCrest from "./assets/eskele-peaceful-crest.png";
 import peacefulWordmark from "./assets/eskele-peaceful-wordmark.png";
+import discordMark from "./assets/discord-mark.svg";
 import ScreenshotCarousel from "./components/ScreenshotCarousel";
 import StaffCarousel from "./components/StaffCarousel";
 import ModsGrid from "./components/ModsGrid";
 import communityAdmins from "./assets/admins.png";
 import communityOwner from "./assets/owner.png";
 import NetheriteCursor from "./components/NetheriteCursor";
+import BackToTop from "./components/BackToTop";
 
 type Server = {
   id: "peaceful" | "fabric";
@@ -103,11 +105,10 @@ export default function App() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#07090b] text-[#f5f1e8]">
       <NetheriteCursor />
+      <BackToTop />
       <nav className="site-nav" aria-label="Main navigation">
         <a href="#top" className="nav-brand" aria-label="Eskele SMP home">
-          <span className="brand-cube">
-            <span />
-          </span>
+          <img className="nav-logo" src={peacefulCrest} alt="" width={44} height={44} />
           <span>
             <b>ESKELE</b>
             <small>SURVIVAL NETWORK</small>
@@ -155,7 +156,7 @@ export default function App() {
         </div>
       </nav>
 
-      <section id="top" className="hero">
+      <section id="top" className="hero" tabIndex={-1}>
         <div className="hero-art" aria-hidden="true">
           <div className="hero-world hero-world-peaceful">
             <img src={peacefulCrest} alt="" />
@@ -200,7 +201,7 @@ export default function App() {
           aria-label="Check network updates on Discord"
         >
           <span className="pulse-icon" aria-hidden="true">
-            <i />
+            <img src={discordMark} alt="" width={127} height={96} />
           </span>
           <span>
             <small>NETWORK UPDATES</small>

@@ -62,6 +62,41 @@
   pointer-events: none;
 }
 
+.back-to-top {
+  position: fixed;
+  z-index: 25;
+  right: calc(clamp(16px, 3vw, 32px) + env(safe-area-inset-right));
+  bottom: calc(24px + env(safe-area-inset-bottom));
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #a98aff70;
+  background: #17101fee;
+  padding: 0 16px;
+  color: #f5f1e8;
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 4px 4px 0 #0008;
+  backdrop-filter: blur(12px);
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.back-to-top svg {
+  color: #c699ff;
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px);
+  border-color: #c699ff;
+  background: #2a183a;
+}
+
 .site-nav {
   position: absolute;
   z-index: 30;
@@ -101,24 +136,12 @@
   letter-spacing: 0.19em;
 }
 
-.brand-cube {
-  position: relative;
-  display: grid;
-  width: 31px;
-  height: 31px;
-  place-items: center;
-  border: 1px solid #bc31e5;
-  background: #1c0d23;
-  box-shadow:
-    inset 0 0 15px #b72add55,
-    4px 4px 0 #07090b;
-}
-
-.brand-cube span {
-  width: 12px;
-  height: 12px;
-  border: 2px solid #e05bff;
-  box-shadow: 4px 4px 0 #7b178f;
+.nav-logo {
+  display: block;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -379,16 +402,16 @@
   display: grid;
   width: 29px;
   height: 29px;
+  flex-shrink: 0;
   place-items: center;
-  border: 1px solid #74dc6155;
-  background: #6ed75e12;
+  border: 1px solid #5865f277;
+  background: #5865f226;
 }
 
-.pulse-icon i {
-  width: 9px;
-  height: 9px;
-  background: #72df60;
-  box-shadow: 0 0 10px #72df60;
+.pulse-icon img {
+  display: block;
+  width: 22px;
+  height: auto;
 }
 
 .pulse-bars {
