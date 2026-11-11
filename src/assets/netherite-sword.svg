@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <title>Netherite sword</title>
+  <!-- The upper-right tip is the cursor hotspot at (29, 2). -->
+  <path fill="#17151e" d="M8 18h6v6h-2v2h-2v2H8v2H2v-6h2v-2h2v-2h2z"/>
+  <path fill="#55404e" d="M8 22h4v2h-2v2H8v2H4v-2h2v-2h2z"/>
+  <path fill="#927569" d="M8 22h2v2H8v2H6v2H4v-2h2v-2h2z"/>
+  <path fill="#302736" d="M2 26h2v2h4v2H2z"/>
+  <path fill="#17151e" d="M26 2h4v4h-2v2h-2v2h-2v2h-2v2h-2v2h-2v2h-2v2h-4v-2h-2v-2h2v-2h2v-2h2v-2h2V8h2V6h2V4h4z"/>
+  <path fill="#62596e" d="M26 4h2v2h-2v2h-2v2h-2v2h-2v2h-2v2h-2v2h-4v-2h2v-2h2v-2h2v-2h2V8h2V6h4z"/>
+  <path fill="#aaa1b4" d="M26 4h2v2h-2v2h-2v2h-2v2h-2v2h-2v2h-2v2h-2v-2h2v-2h2v-2h2v-2h2V8h2V6h2z"/>
+  <path fill="#494351" d="M24 8h2v2h-2v2h-2v2h-2v2h-2v2h-2v2h-2v-2h2v-2h2v-2h2v-2h2v-2h2z"/>
+  <path fill="#17151e" d="M8 14h4v2h2v2h2v2h4v4h-4v-2h-2v-2h-2v-2H8z"/>
+  <path fill="#756278" d="M8 16h4v2h2v2h2v2h2v2h-2v-2h-2v-2h-2v-2H8z"/>
+  <path fill="#a393a5" d="M8 14h4v2H8zm8 6h4v2h-4z"/>
+</svg>

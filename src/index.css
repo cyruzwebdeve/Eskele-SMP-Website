@@ -28,6 +28,19 @@
     cursor: pointer;
   }
 
+  @media (hover: hover) and (pointer: fine) {
+    html.netherite-cursor-enabled,
+    html.netherite-cursor-enabled * {
+      cursor:
+        url("./assets/netherite-sword.svg") 29 2,
+        auto;
+    }
+
+    html.netherite-cursor-enabled :is(input, textarea, [contenteditable="true"]) {
+      cursor: text;
+    }
+  }
+
   a:focus-visible,
   button:focus-visible {
     outline: 2px solid #e287ff;
@@ -38,6 +51,15 @@
 ::selection {
   color: #08050a;
   background: #d644ff;
+}
+
+.cursor-particles {
+  position: fixed;
+  z-index: 2147483647;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
 .site-nav {

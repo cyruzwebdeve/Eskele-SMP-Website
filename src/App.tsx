@@ -8,6 +8,7 @@ import ScreenshotCarousel from "./components/ScreenshotCarousel";
 import StaffCarousel from "./components/StaffCarousel";
 import communityAdmins from "./assets/admins.png";
 import communityOwner from "./assets/owner.png";
+import NetheriteCursor from "./components/NetheriteCursor";
 
 type Server = {
   id: "peaceful" | "fabric";
@@ -100,6 +101,7 @@ export default function App() {
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#07090b] text-[#f5f1e8]">
+      <NetheriteCursor />
       <nav className="site-nav" aria-label="Main navigation">
         <a href="#top" className="nav-brand" aria-label="Eskele SMP home">
           <span className="brand-cube">
