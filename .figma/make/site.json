@@ -1,6 +1,9 @@
 {
   "title": "Eskele SMP | Two Worlds, One Community",
   "language": "en",
+  "icons": {
+    "icon": "/favicon-fabric.png"
+  },
   "description": "Explore Eskele SMP’s Java and Bedrock survival worlds and join our Discord community for server access, connection details, and Fabric modpack guidance.",
   "robots": {
     "index": false
